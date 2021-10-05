@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   text:string = "";
   tel:number = NaN;
+  area:number = NaN;
 
   constructor() { }
 
@@ -23,13 +24,21 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  getArea():string{
+    if (isNaN(this.area)){
+      return '';
+    }else{
+      return this.area.toString();
+    }
+  }
+
   getText():string{
     return this.text.split(' ').join('%20')
   }
 
   generateLink():string{
     return(
-      `https://wa.me/${this.getNumber()}?text=${this.getText()}`
+      `https://wa.me/${this.getArea()}${this.getNumber()}?text=${this.getText()}`
     )
   }
 

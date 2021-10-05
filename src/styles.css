@@ -3,3 +3,17 @@
     --phone-color: #eaeaea;
     --site-color: #138c7e;
 }
+
+.form-control{
+    border-color: var(--site-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--site-color);
+}
+
+.btn{
+    background: var(--site-color);
+    color: #fff;
+    padding: 15px;
+}
