@@ -145,3 +145,17 @@
     border-radius: 50%;
     box-shadow: inset 0 0 6px 3px rgb(0 0 0 / 3%);
 }
+
+.form-control{
+    border-color: var(--site-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--site-color);
+}
+
+.btn{
+    background: var(--site-color);
+    color: #fff;
+    padding: 15px;
+}

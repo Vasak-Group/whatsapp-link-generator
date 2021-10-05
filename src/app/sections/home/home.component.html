@@ -2,7 +2,8 @@
     <div class="row">
 
         <div class="col-md-6 p-5 text-center">
-            <div class="mb-3">
+            <h1 style="margin-bottom: 100px;">Genera tu Link personalizado</h1>
+            <div class="mb-3" style="padding: 20px;">
                 <label for="tel" class="form-label">Numero de Telefono</label>
                 <input
                     id="tel"
@@ -12,7 +13,7 @@
                     rows="3" />
             </div>   
 
-            <div class="mb-3">
+            <div class="mb-3" style="padding: 20px;">
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea
                     id="mensaje"
@@ -20,7 +21,11 @@
                     [(ngModel)]="text"
                     rows="3">
                 </textarea>
-            </div>            
+            </div>
+
+            <div class="d-grid gap-2" style="padding: 20px;" (click)="copyURL();">
+                <button class="btn" type="button">Copiar Link</button>
+            </div>
         </div>
 
         <div class="col-md-6 p-5">
@@ -31,17 +36,30 @@
                 <div class="wslg-device-body">
                     <div class="wslg-screen">
                         <div class="wslg-screen-header">
-                        <!--.wslg-screen-header-topbar-->
-                        <!--.wslg-screen-header-statusbar--><img class="wslg-chat-header-bar" src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-header.png" alt="">
+                            <img
+                                class="wslg-chat-header-bar"
+                                src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-header.png"
+                                alt="" />
                         </div>
                         <div class="wslg-screen-body">
-                        <div class="wslg-screen-body-message">
-                            <div class="wslg-screen-body-message--bubble">
-                            <div class="wslg-text">{{ text }}</div>
-                            <div class="wslg-icons-wrapper"><img src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-emoji.png" alt=""><img src="https://vilmanunez.com/wp-content/plugins/highlight/images/wslg-chat-clip.png" alt=""></div>
+                            <div class="wslg-screen-body-message">
+                                <div class="wslg-screen-body-message--bubble">
+                                    <div class="wslg-text">{{ text }}</div>
+                                    <div class="wslg-icons-wrapper">
+                                        <img
+                                            src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-emoji.png"
+                                            alt="" />
+                                        <img
+                                            src="https://vilmanunez.com/wp-content/plugins/highlight/images/wslg-chat-clip.png"
+                                            alt="" />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="wslg-screen-body-send"><img src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-send.png" alt=""></div>
+                            <div class="wslg-screen-body-send">
+                                <img
+                                    src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-send.png"
+                                    alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

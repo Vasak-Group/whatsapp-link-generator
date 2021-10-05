@@ -15,4 +15,26 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getNumber():string{
+    if (this.tel == NaN){
+      return '';
+    }else{
+      return this.tel.toString();
+    }
+  }
+
+  getText():String{
+    return this.text.split(' ').join('%20')
+  }
+
+  generateLink():String{
+    return(
+      `https://wa.me/${this.getNumber()}?text=${this.getText()}`
+    )
+  }
+
+  copyURL():void{
+    navigator.clipboard.writeText(this.generateLink().toString());
+  }
+
 }
