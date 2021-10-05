@@ -1,1 +1,55 @@
-<p>home works!</p>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-6 p-5 text-center">
+            <div class="mb-3">
+                <label for="tel" class="form-label">Numero de Telefono</label>
+                <input
+                    id="tel"
+                    type="number"
+                    class="form-control"
+                    [(ngModel)]="tel"
+                    rows="3" />
+            </div>   
+
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    class="form-control"
+                    [(ngModel)]="text"
+                    rows="3">
+                </textarea>
+            </div>            
+        </div>
+
+        <div class="col-md-6 p-5 text-center">
+            <div class="wslg-device">
+                <div class="wslg-device-header">
+                    <div class="wslg-speaker"></div>
+                </div>
+                <div class="wslg-device-body">
+                    <div class="wslg-screen">
+                        <div class="wslg-screen-header">
+                        <!--.wslg-screen-header-topbar-->
+                        <!--.wslg-screen-header-statusbar--><img class="wslg-chat-header-bar" src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-header.png" alt="">
+                        </div>
+                        <div class="wslg-screen-body">
+                        <div class="wslg-screen-body-message">
+                            <div class="wslg-screen-body-message--bubble">
+                            <div class="wslg-text">{{ text }}</div>
+                            <div class="wslg-icons-wrapper"><img src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-emoji.png" alt=""><img src="https://vilmanunez.com/wp-content/plugins/highlight/images/wslg-chat-clip.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="wslg-screen-body-send"><img src="https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-send.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wslg-device-footer">
+                    <div class="wslg-button"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

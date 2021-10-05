@@ -1,0 +1,147 @@
+.wslg-container .wslg-preview-wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.wslg-preview-wrapper {
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wslg-flex-column {
+    flex-direction: column;
+}
+
+.wslg-d-flex {
+    display: flex;
+}
+
+.wslg-device {
+    background: white;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 2%), 0 6.7px 5.3px rgb(0 0 0 / 3%), 0 12.5px 10px rgb(0 0 0 / 4%), 0 22.3px 17.9px rgb(0 0 0 / 4%), 0 41.8px 33.4px rgb(0 0 0 / 5%), 0 100px 80px rgb(0 0 0 / 7%);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.wslg-device .wslg-device-header, .wslg-device .wslg-device-footer {
+    border-radius: 20px 20px 0 0;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.wslg-device .wslg-device-header .wslg-speaker, .wslg-device .wslg-device-footer .wslg-speaker {
+    height: 8px;
+    border: 2px solid rgba(43, 64, 74, 0.13);
+    border-radius: 25px;
+    width: 100px;
+    box-shadow: inset 0 0 6px 3px rgb(0 0 0 / 3%);
+}
+
+.wslg-device .wslg-device-body {
+    padding: 0 20px;
+    height: auto;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.wslg-device .wslg-device-body .wslg-screen {
+    background: url(https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-bg.png);
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px 2px rgb(0 0 0 / 2%);
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-header .wslg-chat-header-bar {
+    width: 100%;
+    height: auto;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding: 15px;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-message {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    padding-right: 15px;
+    max-width: 280px;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-message .wslg-screen-body-message--bubble {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 0 2px 2px rgb(0 0 0 / 4%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-message .wslg-screen-body-message--bubble .wslg-text {
+    font-size: 16px;
+    line-height: 19px;
+    word-break: break-word;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-message .wslg-screen-body-message--bubble .wslg-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-message .wslg-screen-body-message--bubble .wslg-icons-wrapper img:first-child {
+    height: 20px;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-message .wslg-screen-body-message--bubble .wslg-icons-wrapper img {
+    display: block;
+}
+
+.wslg-device .wslg-device-body .wslg-screen .wslg-screen-body .wslg-screen-body-send {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.wslg-device .wslg-device-header, .wslg-device .wslg-device-footer {
+    border-radius: 20px 20px 0 0;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.wslg-device .wslg-device-footer .wslg-button {
+    border: 2px solid rgba(43, 64, 74, 0.13);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 6px 3px rgb(0 0 0 / 3%);
+}
