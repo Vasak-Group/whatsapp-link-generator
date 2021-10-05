@@ -4,6 +4,10 @@
     --site-color: #138c7e;
 }
 
+body{
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 .form-control{
     border-color: var(--site-color);
 }
