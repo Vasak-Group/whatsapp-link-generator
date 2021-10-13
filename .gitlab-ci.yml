@@ -5,7 +5,7 @@ pages:
   - npm install -g @angular/cli
   - npm install
   - npm run build
-  - mv dist/wpplink-generator public
+  - mv dist/WPPLinkGenerator public
   artifacts:
     paths:
     - public
