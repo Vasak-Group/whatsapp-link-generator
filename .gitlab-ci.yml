@@ -1,0 +1,13 @@
+image: node:latest
+
+pages:
+  script:
+  - npm install -g @angular/cli
+  - npm install
+  - npm run build
+  - mv dist/wpplink-generator public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
