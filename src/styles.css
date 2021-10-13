@@ -21,3 +21,8 @@ h1, h2, h3, h4{
     color: #fff;
     padding: 15px;
 }
+
+a{
+    color: var(--site-color);
+    text-decoration: none;
+}
