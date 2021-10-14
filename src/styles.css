@@ -26,3 +26,10 @@ a{
     color: var(--site-color);
     text-decoration: none;
 }
+
+#particles-js{
+    position: fixed;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+  }
