@@ -11,6 +11,7 @@
                             <input
                                 id="tel"
                                 type="number"
+                                placeholder="54"
                                 class="form-control"
                                 [(ngModel)]="area" />
                         </div>
@@ -21,6 +22,7 @@
                             <input
                                 id="tel"
                                 type="number"
+                                placeholder="1123882753"
                                 class="form-control"
                                 [(ngModel)]="tel" />
                         </div>  
@@ -33,9 +35,14 @@
                 <textarea
                     id="mensaje"
                     class="form-control"
+                    placeholder="Hola, me comunico desde tu web, me gustaria saber los precios de https://lynx.net.ar/"
                     [(ngModel)]="text"
                     rows="3">
                 </textarea>
+            </div>
+
+            <div class="mb-3" style="padding: 20px;">
+                <p class="text-muted small">Verifique la forma de uso en la parte inferior de la pagina en caso de no saber que poner en cada campo. En caso de que no aclare sus dudas comuniquese con Lynx.</p>
             </div>
 
             <div class="d-grid gap-2" style="padding: 20px;" >
