@@ -172,3 +172,10 @@
     margin-bottom: 0px;
     margin-left: -12px;
 }
+
+.contenedor{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #FFF;
+    box-shadow: 5px 5px 5px 1px #0003;
+}
