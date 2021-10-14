@@ -17,3 +17,8 @@ p{
 h2{
     color: #FFF;
 }
+
+footer{
+    margin-top: 20px;
+    box-shadow: -5px -5px 5px 1px #0003;
+}
