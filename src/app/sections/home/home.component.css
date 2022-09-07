@@ -26,7 +26,8 @@
     margin: auto;
 }
 
-.wslg-device .wslg-device-header, .wslg-device .wslg-device-footer {
+.wslg-device .wslg-device-header,
+.wslg-device .wslg-device-footer {
     border-radius: 20px 20px 0 0;
     padding: 25px 0;
     display: flex;
@@ -34,7 +35,8 @@
     align-content: center;
 }
 
-.wslg-device .wslg-device-header .wslg-speaker, .wslg-device .wslg-device-footer .wslg-speaker {
+.wslg-device .wslg-device-header .wslg-speaker,
+.wslg-device .wslg-device-footer .wslg-speaker {
     height: 8px;
     border: 2px solid rgba(43, 64, 74, 0.13);
     border-radius: 25px;
@@ -114,7 +116,8 @@
     justify-content: flex-end;
 }
 
-.wslg-device .wslg-device-header, .wslg-device .wslg-device-footer {
+.wslg-device .wslg-device-header,
+.wslg-device .wslg-device-footer {
     border-radius: 20px 20px 0 0;
     padding: 25px 0;
     display: flex;
@@ -130,52 +133,54 @@
     box-shadow: inset 0 0 6px 3px rgb(0 0 0 / 3%);
 }
 
-.wpp-pre-head{
+.wpp-pre-head {
     height: 20px;
     width: 100%;
     background: #074c44;
 }
 
-.wpp-head{
+.wpp-head {
     width: 100%;
     height: 50px;
     background: #065e55;
 }
 
-.no-m{
+.no-m {
     margin: 0;
     height: 100%;
 }
 
-.fa{
+.fa {
     padding-top: 17px;
     font-size: 20px;
     font-weight: 10;
 
 }
 
-.wpp-img{
+.wpp-img {
     border-radius: 100%;
     margin-top: 6px;
 }
 
-.wpp-status{
+.wpp-status {
     font-size: 9px;
     color: #ccc;
     margin-bottom: 0px;
     margin-left: -12px;
 }
 
-.wpp-name{
-    font-size: 11px;;
+.wpp-name {
+    font-size: 11px;
+    ;
     font-weight: bold;
     margin-bottom: 0px;
     margin-left: -12px;
 }
 
-.contenedor{
+.contenedor {
     margin-top: 20px;
     margin-bottom: 20px;
     background: #FFF;
     box-shadow: 5px 5px 5px 1px #0003;
+    border-radius: var(--border-radius);
 }

@@ -7,42 +7,42 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  text:string = "";
-  tel:number = NaN;
-  area:number = NaN;
+  text: string = "";
+  tel: number = NaN;
+  area: number = NaN;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  getNumber():string{
-    if (isNaN(this.tel)){
+  getNumber(): string {
+    if (isNaN(this.tel)) {
       return '';
-    }else{
+    } else {
       return this.tel.toString();
     }
   }
 
-  getArea():string{
-    if (isNaN(this.area)){
+  getArea(): string {
+    if (isNaN(this.area)) {
       return '';
-    }else{
+    } else {
       return this.area.toString();
     }
   }
 
-  getText():string{
+  getText(): string {
     return this.text.split(' ').join('%20')
   }
 
-  generateLink():string{
-    return(
+  generateLink(): string {
+    return (
       `https://wa.me/${this.getArea()}${this.getNumber()}?text=${this.getText()}`
     )
   }
 
-  copyURL():void{
+  copyURL(): void {
     navigator.clipboard.writeText(this.generateLink().toString());
   }
 
