@@ -1,35 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
+:root {
     --phone-color: #eaeaea;
     --site-color: #138c7e;
 }
 
-body{
+body {
     font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.form-control{
+.form-control {
     border-color: var(--site-color);
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     color: var(--site-color);
 }
 
-.btn{
+.btn {
     background: var(--site-color);
     color: #fff;
     padding: 15px;
 }
 
-a{
+a {
     color: var(--site-color);
     text-decoration: none;
 }
 
-#particles-js{
+#particles-js {
     position: fixed;
     z-index: -10;
     height: 100%;
     width: 100%;
-  }
+}
