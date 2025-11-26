@@ -35,11 +35,11 @@ const copyURL = async () => {
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-8">
+  <div class="w-full mx-24 px-4 py-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Form Section -->
-      <div class="contenedor text-center">
-        <h1 class="text-3xl md:text-4xl font-bold text-whatsapp mb-16">
+      <div class="text-center bg-slate-200 dark:bg-slate-900 rounded-xl p-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-primary mb-16">
           Genera tu Link personalizado
         </h1>
         
@@ -55,7 +55,7 @@ const copyURL = async () => {
                   v-model="area"
                   type="number"
                   placeholder="54"
-                  class="w-full px-4 py-2 border-2 border-whatsapp rounded-lg focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all"
+                  class="w-full px-4 py-2 border-2 border-whatsapp rounded-xl focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all"
                 />
               </div>
             </div>
@@ -69,7 +69,7 @@ const copyURL = async () => {
                   v-model="tel"
                   type="number"
                   placeholder="1123882753"
-                  class="w-full px-4 py-2 border-2 border-whatsapp rounded-lg focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all"
+                  class="w-full px-4 py-2 border-2 border-whatsapp rounded-xl focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all"
                 />
               </div>
             </div>
@@ -86,7 +86,7 @@ const copyURL = async () => {
               v-model="text"
               rows="3"
               placeholder="Hola, me comunico desde tu web, me gustaría saber los precios de https://vasak.net.ar/"
-              class="w-full px-4 py-2 border-2 border-whatsapp rounded-lg focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all resize-none"
+              class="w-full px-4 py-2 border-2 border-whatsapp rounded-xl focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all resize-none"
             ></textarea>
           </div>
         </div>
@@ -94,7 +94,7 @@ const copyURL = async () => {
         <div class="px-5 py-4">
           <p class="text-sm text-gray-500 mb-6">
             Verifique la forma de uso en la parte inferior de la página en caso de no saber qué poner en cada campo. 
-            En caso de que no aclare sus dudas comuníquese con <span class="font-bold text-whatsapp">Vasak</span>.
+            En caso de que no aclare sus dudas comuníquese con <a href="https://vasak.net.ar" class  ="font-bold text-primary">Vasak Group</a>.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const copyURL = async () => {
           <button
             @click="copyURL"
             type="button"
-            class="w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            class="w-full vsk-gradient text-white font-bold py-3 px-6 rounded-xl"
           >
             Copiar Link
           </button>

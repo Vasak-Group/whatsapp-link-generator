@@ -1,16 +1,18 @@
 <script setup lang="ts">
-import Topbar from './components/Topbar.vue'
-import Home from './components/Home.vue'
-import Footer from './components/Footer.vue'
+import TopbarComponent from './components/TopbarComponent.vue'
+import HomeView from './components/HomeView.vue'
+import FooterComponent from './components/FooterComponent.vue'
+import ThemeToggle from './components/ThemeToggle.vue'
 </script>
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <Topbar />
+    <TopbarComponent />
     <main class="flex-grow">
-      <Home />
+      <HomeView />
     </main>
-    <Footer />
+    <FooterComponent />
+    <ThemeToggle />
   </div>
 </template>
 
