@@ -3,27 +3,22 @@
 </script>
 
 <template>
-  <header id="header" class="flex items-center bg-gradient-to-r from-whatsapp to-whatsapp-dark shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center hover:opacity-90 transition-opacity">
-        <img 
-          src="/assets/img/wpp-logo.svg" 
-          alt="WhatsApp Link Generator" 
-          title="WhatsApp Link Generator"
-          class="h-12 w-auto"
-        />
+  <header id="header" class="flex items-center bg-slate-200 dark:bg-slate-900 m-4 rounded-xl">
+    <div class="w-full mx-12 px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center vsk-text-gradient font-bold text-2xl">
+        WhatsApp Link Generator
       </a>
 
       <nav class="navbar">
         <ul class="flex gap-6">
           <li>
             <a 
-              class="text-white font-medium hover:text-gray-200 transition-colors duration-200 text-lg"
+              class="hover:text-primary transition-colors duration-200"
               href="https://vasak.net.ar/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sobre Nosotros
+              Vasak Group
             </a>
           </li>
         </ul>
