@@ -98,7 +98,7 @@ const copyURL = async () => {
         <div class="bg-slate-200 dark:bg-slate-900 shadow-2xl w-full max-w-md rounded-[20px] mx-auto">
           <!-- Device Header -->
           <div class="rounded-t-[20px] py-6 flex justify-center items-center">
-            <div class="h-2 border-2 border-gray-300 rounded-full w-24 shadow-inner"></div>
+            <div class="h-2 border-2 border-slate-300 dark:border-slate-700 rounded-full w-24 shadow-inner"></div>
           </div>
 
           <!-- Device Body -->
@@ -134,7 +134,7 @@ const copyURL = async () => {
                     </div>
                     <div class="col-span-1"></div>
                     <div class="col-span-1 text-center">
-                      <img src="/assets/img/elipsis-v.png" alt="Menu" class="h-4 inline-block" />
+                      <img src="/assets/img/elipsis-v.png" alt="Menu" class="h-4 inline-block mb-1" />
                     </div>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ const copyURL = async () => {
 
           <!-- Device Footer -->
           <div class="rounded-t-[20px] py-6 flex justify-center items-center">
-            <div class="border-2 border-gray-300 h-12 w-12 rounded-full shadow-inner"></div>
+            <div class="border-2 border-slate-300 dark:border-slate-700 h-12 w-12 rounded-full shadow-inner"></div>
           </div>
         </div>
       </div>
