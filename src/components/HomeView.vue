@@ -35,7 +35,7 @@ const copyURL = async () => {
 </script>
 
 <template>
-  <div class=" mx-24 px-4 py-8">
+  <div class="mx-24 px-4 py-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Form Section -->
       <div class="text-center bg-slate-200 dark:bg-slate-900 rounded-xl p-12">
@@ -94,25 +94,36 @@ const copyURL = async () => {
 
       <!-- Device Preview Section -->
       <div class="flex items-center justify-center p-5">
-        <div class="wslg-device">
-          <div class="wslg-device-header">
-            <div class="wslg-speaker"></div>
+        <!-- Device Container -->
+        <div class="bg-slate-200 dark:bg-slate-900 shadow-2xl w-full max-w-md rounded-[20px] mx-auto">
+          <!-- Device Header -->
+          <div class="rounded-t-[20px] py-6 flex justify-center items-center">
+            <div class="h-2 border-2 border-gray-300 rounded-full w-24 shadow-inner"></div>
           </div>
-          <div class="wslg-device-body">
-            <div class="wslg-screen">
-              <div class="wslg-screen-header">
-                <div class="wpp-pre-head"></div>
-                <div class="wpp-head">
-                  <div class="grid grid-cols-12 text-white no-m items-center p-auto px-2">
+
+          <!-- Device Body -->
+          <div class="px-5 min-h-[600px] w-full flex box-border">
+            <!-- Screen -->
+            <div class="w-full h-auto flex flex-col box-border shadow-inner"
+              style="background: url(https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-bg.png)">
+
+              <!-- Screen Header -->
+              <div class="w-full h-auto flex flex-col">
+                <!-- WhatsApp Pre-Header -->
+                <div class="h-5 w-full bg-slate-200 dark:bg-slate-900"></div>
+
+                <!-- WhatsApp Header -->
+                <div class="w-full h-12 bg-green-900">
+                  <div class="grid grid-cols-12 text-white m-0 h-full items-center px-2">
                     <div class="col-span-1 text-center">
                       <font-awesome-icon :icon="['fas', 'arrow-left']" class="text-white text-lg" />
                     </div>
                     <div class="col-span-2 mb-2">
-                      <img src="/assets/img/no_profile.png" alt="Profile" class="wpp-img w-8 h-8" />
+                      <img src="/assets/img/no_profile.png" alt="Profile" class="rounded-full mt-1.5 w-8 h-8" />
                     </div>
                     <div class="col-span-4">
-                      <p class="wpp-name">+ {{ getArea }} {{ getNumber }}</p>
-                      <p class="wpp-status">Online</p>
+                      <p class="text-xs font-bold mb-0 -ml-3">+ {{ getArea }} {{ getNumber }}</p>
+                      <p class="text-xs text-gray-300 mb-0 -ml-3">Online</p>
                     </div>
                     <div class="col-span-1 text-center">
                       <font-awesome-icon :icon="['fas', 'video']" class="text-white text-lg" />
@@ -128,30 +139,38 @@ const copyURL = async () => {
                   </div>
                 </div>
               </div>
-              <div class="wslg-screen-body">
-                <div class="wslg-screen-body-message">
-                  <div class="wslg-screen-body-message--bubble">
-                    <div class="wslg-text px-4">
+
+              <!-- Screen Body -->
+              <div class="flex items-end h-full p-4">
+                <!-- Message Bubble Container -->
+                <div class="flex items-end flex-grow pr-4 ">
+                  <!-- Message Bubble -->
+                  <div class="bg-white rounded-2xl py-2 px-0 shadow-md w-full h-12 flex flex-col justify-end">
+                    <div class="text-base leading-5 break-words px-4">
                       <div class="grid grid-cols-12 gap-2 items-center">
                         <div class="col-span-2">
-                          <img src="/assets/img/wslg-chat-emoji.png" class="w-full" alt="Emoji" />
+                          <img src="/assets/img/wslg-chat-emoji.png" class="w-6 h-6 m-1" alt="Emoji" />
                         </div>
                         <div class="col-span-8 text-sm">{{ text }}</div>
                         <div class="col-span-2">
-                          <img src="/assets/img/wslg-chat-clip.png" class="max-h-5 w-full" alt="Clip" />
+                          <img src="/assets/img/wslg-chat-clip.png" class="w-6 h-6 m-1" alt="Clip" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="wslg-screen-body-send">
-                  <img src="/assets/img/wslg-chat-send.png" alt="Send" class="h-8" />
+
+                <!-- Send Button -->
+                <div class="flex items-end h-full justify-end">
+                  <img src="/assets/img/wslg-chat-send.png" alt="Send" class="h-12" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="wslg-device-footer">
-            <div class="wslg-button"></div>
+
+          <!-- Device Footer -->
+          <div class="rounded-t-[20px] py-6 flex justify-center items-center">
+            <div class="border-2 border-gray-300 h-12 w-12 rounded-full shadow-inner"></div>
           </div>
         </div>
       </div>
