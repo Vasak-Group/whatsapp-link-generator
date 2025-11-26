@@ -151,7 +151,7 @@ const copyURL = async () => {
                         <div class="col-span-2">
                           <img src="/assets/img/wslg-chat-emoji.png" class="w-6 h-6 m-1" alt="Emoji" />
                         </div>
-                        <div class="col-span-8 text-sm">{{ text }}</div>
+                        <div class="col-span-8 text-sm text-gray-600">{{ text }}</div>
                         <div class="col-span-2">
                           <img src="/assets/img/wslg-chat-clip.png" class="w-6 h-6 m-1" alt="Clip" />
                         </div>
