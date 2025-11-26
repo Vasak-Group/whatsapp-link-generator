@@ -35,42 +35,32 @@ const copyURL = async () => {
 </script>
 
 <template>
-  <div class="w-full mx-24 px-4 py-8">
+  <div class=" mx-24 px-4 py-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Form Section -->
       <div class="text-center bg-slate-200 dark:bg-slate-900 rounded-xl p-12">
         <h1 class="text-3xl md:text-4xl font-bold text-primary mb-16">
           Genera tu Link personalizado
         </h1>
-        
+
         <div class="px-5 py-4">
           <div class="grid grid-cols-12 gap-4">
             <div class="col-span-3">
               <div class="mb-6">
-                <label for="area" class="block text-left text-sm font-medium text-gray-700 mb-2">
+                <label for="area" class="block text-left text-sm font-medium mb-2">
                   Área
                 </label>
-                <input
-                  id="area"
-                  v-model="area"
-                  type="number"
-                  placeholder="54"
-                  class="w-full px-4 py-2 border-2 border-whatsapp rounded-xl focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all"
-                />
+                <input id="area" v-model="area" type="number" placeholder="54"
+                  class="w-full px-4 py-2 bg-slate-100 dark:bg-slate-950 rounded-xl focus:outline-none" />
               </div>
             </div>
             <div class="col-span-9">
               <div class="mb-6">
-                <label for="tel" class="block text-left text-sm font-medium text-gray-700 mb-2">
+                <label for="tel" class="block text-left text-sm font-medium mb-2">
                   Número de Teléfono
                 </label>
-                <input
-                  id="tel"
-                  v-model="tel"
-                  type="number"
-                  placeholder="1123882753"
-                  class="w-full px-4 py-2 border-2 border-whatsapp rounded-xl focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all"
-                />
+                <input id="tel" v-model="tel" type="number" placeholder="1123882753"
+                  class="w-full px-4 py-2 bg-slate-100 dark:bg-slate-950 rounded-xl focus:outline-none" />
               </div>
             </div>
           </div>
@@ -78,32 +68,25 @@ const copyURL = async () => {
 
         <div class="px-5 py-4">
           <div class="mb-6">
-            <label for="mensaje" class="block text-left text-sm font-medium text-gray-700 mb-2">
+            <label for="mensaje" class="block text-left text-sm font-medium mb-2">
               Mensaje
             </label>
-            <textarea
-              id="mensaje"
-              v-model="text"
-              rows="3"
+            <textarea id="mensaje" v-model="text" rows="3"
               placeholder="Hola, me comunico desde tu web, me gustaría saber los precios de https://vasak.net.ar/"
-              class="w-full px-4 py-2 border-2 border-whatsapp rounded-xl focus:outline-none focus:ring-2 focus:ring-whatsapp focus:border-transparent transition-all resize-none"
-            ></textarea>
+              class="w-full px-4 py-2 bg-slate-100 dark:bg-slate-950 rounded-xl focus:outline-none resize-none"></textarea>
           </div>
         </div>
 
         <div class="px-5 py-4">
           <p class="text-sm text-gray-500 mb-6">
-            Verifique la forma de uso en la parte inferior de la página en caso de no saber qué poner en cada campo. 
-            En caso de que no aclare sus dudas comuníquese con <a href="https://vasak.net.ar" class  ="font-bold text-primary">Vasak Group</a>.
+            Verifique la forma de uso en la parte inferior de la página en caso de no saber qué poner en cada campo.
+            En caso de que no aclare sus dudas comuníquese con <a href="https://vasak.net.ar"
+              class="font-bold text-primary">Vasak Group</a>.
           </p>
         </div>
 
         <div class="px-5 py-4">
-          <button
-            @click="copyURL"
-            type="button"
-            class="w-full vsk-gradient text-white font-bold py-3 px-6 rounded-xl"
-          >
+          <button @click="copyURL" type="button" class="w-full vsk-gradient text-white font-bold py-3 px-6 rounded-xl">
             Copiar Link
           </button>
         </div>
@@ -120,16 +103,12 @@ const copyURL = async () => {
               <div class="wslg-screen-header">
                 <div class="wpp-pre-head"></div>
                 <div class="wpp-head">
-                  <div class="grid grid-cols-12 text-white no-m items-center px-2">
+                  <div class="grid grid-cols-12 text-white no-m items-center p-auto px-2">
                     <div class="col-span-1 text-center">
                       <font-awesome-icon :icon="['fas', 'arrow-left']" class="text-white text-lg" />
                     </div>
-                    <div class="col-span-2">
-                      <img 
-                        src="/assets/img/no_profile.png" 
-                        alt="Profile" 
-                        class="wpp-img w-8 h-8"
-                      />
+                    <div class="col-span-2 mb-2">
+                      <img src="/assets/img/no_profile.png" alt="Profile" class="wpp-img w-8 h-8" />
                     </div>
                     <div class="col-span-4">
                       <p class="wpp-name">+ {{ getArea }} {{ getNumber }}</p>
@@ -144,11 +123,7 @@ const copyURL = async () => {
                     </div>
                     <div class="col-span-1"></div>
                     <div class="col-span-1 text-center">
-                      <img 
-                        src="/assets/img/elipsis-v.png" 
-                        alt="Menu" 
-                        class="h-4 inline-block"
-                      />
+                      <img src="/assets/img/elipsis-v.png" alt="Menu" class="h-4 inline-block" />
                     </div>
                   </div>
                 </div>
@@ -159,30 +134,18 @@ const copyURL = async () => {
                     <div class="wslg-text px-4">
                       <div class="grid grid-cols-12 gap-2 items-center">
                         <div class="col-span-2">
-                          <img 
-                            src="/assets/img/wslg-chat-emoji.png" 
-                            class="w-full"
-                            alt="Emoji"
-                          />
+                          <img src="/assets/img/wslg-chat-emoji.png" class="w-full" alt="Emoji" />
                         </div>
                         <div class="col-span-8 text-sm">{{ text }}</div>
                         <div class="col-span-2">
-                          <img 
-                            src="/assets/img/wslg-chat-clip.png" 
-                            class="max-h-5 w-full"
-                            alt="Clip"
-                          />
+                          <img src="/assets/img/wslg-chat-clip.png" class="max-h-5 w-full" alt="Clip" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="wslg-screen-body-send">
-                  <img 
-                    src="/assets/img/wslg-chat-send.png" 
-                    alt="Send" 
-                    class="h-8"
-                  />
+                  <img src="/assets/img/wslg-chat-send.png" alt="Send" class="h-8" />
                 </div>
               </div>
             </div>
