@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 font-sans;
+  }
+}
+
+@layer components {
+  /* WhatsApp Device Simulator Styles */
+  .wslg-device {
+    @apply bg-phone shadow-2xl w-full max-w-md rounded-phone mx-auto;
+  }
+
+  .wslg-device-header,
+  .wslg-device-footer {
+    @apply rounded-t-phone py-6 flex justify-center items-center;
+  }
+
+  .wslg-speaker {
+    @apply h-2 border-2 border-gray-300 rounded-full w-24 shadow-inner;
+  }
+
+  .wslg-device-body {
+    @apply px-5 min-h-[600px] w-full flex box-border;
+  }
+
+  .wslg-screen {
+    @apply w-full h-auto flex flex-col box-border shadow-inner;
+    background: url(https://vilmanunez.com/wp-content/plugins/wsap-link/images/wslg-chat-bg.png);
+  }
+
+  .wslg-screen-header {
+    @apply w-full h-auto flex flex-col;
+  }
+
+  .wpp-pre-head {
+    @apply h-5 w-full bg-whatsapp-darker;
+  }
+
+  .wpp-head {
+    @apply w-full h-12 bg-whatsapp-header;
+  }
+
+  .wslg-screen-body {
+    @apply flex items-end h-full p-4;
+  }
+
+  .wslg-screen-body-message {
+    @apply flex items-end flex-grow pr-4 max-w-[280px];
+  }
+
+  .wslg-screen-body-message--bubble {
+    @apply bg-white rounded-2xl py-4 px-0 shadow-md w-full h-auto flex flex-col justify-end;
+  }
+
+  .wslg-text {
+    @apply text-base leading-5 break-words;
+  }
+
+  .wslg-screen-body-send {
+    @apply flex items-end h-full justify-end;
+  }
+
+  .wslg-button {
+    @apply border-2 border-gray-300 h-12 w-12 rounded-full shadow-inner;
+  }
+
+  .wpp-img {
+    @apply rounded-full mt-1.5;
+  }
+
+  .wpp-status {
+    @apply text-xs text-gray-300 mb-0 -ml-3;
+  }
+
+  .wpp-name {
+    @apply text-xs font-bold mb-0 -ml-3;
+  }
+
+  .contenedor {
+    @apply my-5 bg-white shadow-lg rounded-lg p-5;
+  }
+}
+
+@layer utilities {
+  .no-m {
+    @apply m-0 h-full;
+  }
+}
